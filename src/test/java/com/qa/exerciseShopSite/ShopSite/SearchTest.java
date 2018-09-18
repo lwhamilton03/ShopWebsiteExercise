@@ -30,6 +30,7 @@ public class SearchTest {
 		driver.get(home);
 		HomePage pageH = PageFactory.initElements(driver, HomePage.class); 
 		pageH.clickDress();
+		pageH.takeScreenShot(driver);
 		
 		driver.get(dress);
 		DressesPage pageD = PageFactory.initElements(driver, DressesPage.class);
